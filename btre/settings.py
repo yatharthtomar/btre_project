@@ -152,3 +152,9 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER ='yatharth.tomar91@gmail.com' 
 EMAIL_HOST_PASSWORD ='Pagalgmail@34pagal'
 EMAIL_USE_TLS= True
+
+
+try:
+    from .local_settings import *
+except ImportError:
+    pass
